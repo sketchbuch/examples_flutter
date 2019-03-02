@@ -1,0 +1,4 @@
+#Fri Mar 01 19:54:14 CET 2019
+base.0=/home/stephen/Android/Projects/examples/notes/notes/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
