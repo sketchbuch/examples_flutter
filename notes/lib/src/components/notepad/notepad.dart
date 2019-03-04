@@ -12,7 +12,7 @@ class Notepad extends StatefulWidget {
 class _NotepadState extends State<Notepad> {
   List<Note> _notes = [];
 
-  void _handleAdd() {
+  void _handleAddNote() {
     final String newTitle = 'Note ' + (_notes.length + 1).toString();
     setState(() {
       _notes.add(new Note(newTitle));
@@ -26,7 +26,7 @@ class _NotepadState extends State<Notepad> {
       ),
       body: _renderNotes(),
       floatingActionButton: FloatingActionButton(
-        onPressed: _handleAdd,
+        onPressed: _handleAddNote,
         tooltip: 'Add note',
         child: Icon(Icons.add),
       ),
