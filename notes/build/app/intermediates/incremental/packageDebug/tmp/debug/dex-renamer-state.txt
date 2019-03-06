@@ -1,4 +1,4 @@
-#Tue Mar 05 18:24:08 CET 2019
+#Wed Mar 06 20:16:41 CET 2019
 base.0=/home/stephen/Android/Projects/examples_flutter/notes/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 
-class Note extends StatelessWidget {
-  String title;
+typedef VoidNoteOnClick = void Function(int index);
 
-  Note(this.title);
+class Note extends StatelessWidget {
+  int index;
+  String title;
+  String description = 'The description is quite long';
+  VoidNoteOnClick onClick;
+
+  Note(this.title, this.index, this.onClick);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
       leading: const Icon(Icons.flight_land),
-      subtitle: Text('The description is quite long'),
+      subtitle: Text(this.description),
       title: Text(this.title),
+      onTap: () => onClick(index),
     );
   }
 }
