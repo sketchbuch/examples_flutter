@@ -24,20 +24,17 @@ class _NotepadState extends State<Notepad> {
       appBar: AppBar(
         title: Text('Notepad'),
       ),
-      body: _renderNotes(),
+      body: ListView.builder(
+        itemCount: _notes.length,
+        itemBuilder: (context, i) {
+          return _notes[i];
+        }
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: _handleAddNote,
         tooltip: 'Add note',
         child: Icon(Icons.add),
       ),
     );
-  }
-
-  ListView _renderNotes() {
-    return ListView.builder(
-      itemCount: _notes.length,
-      itemBuilder: (context, i) {
-        return _notes[i];
-      });
   }
 }

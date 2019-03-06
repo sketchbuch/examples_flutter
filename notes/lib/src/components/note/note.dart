@@ -7,6 +7,10 @@ class Note extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(this.title);
+    return ListTile(
+      leading: const Icon(Icons.flight_land),
+      subtitle: Text('The description is quite long'),
+      title: Text(this.title),
+    );
   }
 }
